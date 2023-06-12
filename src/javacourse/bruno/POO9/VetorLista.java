@@ -13,14 +13,14 @@ public class VetorLista implements Lista {
 
     @Override
     public boolean inserirElemento(double valor, int posicao) {
-        if((posicao <0) || (posicao> this.length())){
+        if((posicao < 0) || (posicao> this.length())){
             return false;
         } else if ((posicao == 0) && (this.length() == 0)){
             this.vetor[0] = valor;
             this.tamLista++;
             return true;
         } else if (this.length() > 0) {
-            for (int i = this.length(); i > posicao; i++){
+            for (int i = this.length(); i >= posicao; i--){
                 vetor[i+1] = vetor[i];
             } vetor[posicao] = valor;
             this.tamLista++;
@@ -49,7 +49,10 @@ public class VetorLista implements Lista {
 
     @Override
     public void imprimir() {
-        throw new UnsupportedOperationException("Not Supported yet.");
+        for(int i = 0; i < this.length(); i++){
+            System.out.println("Elemento[" + i + "]" + this.vetor[i]);
+        }
+        System.out.println("-----------------------------");
     }
 
     @Override

@@ -12,6 +12,13 @@ public class Aula1206BrunoLista {
      */
     public static void main(String[] args) {
 
+        VetorLista vl = new VetorLista();
+
+        vl.inserirElemento(54423,0);
+        vl.inserirElemento(43234,0);
+
+        vl.imprimir();
+
 
     }
 }

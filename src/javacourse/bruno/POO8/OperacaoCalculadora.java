@@ -5,7 +5,6 @@ public class OperacaoCalculadora {
     private static double y;
     private static double ans;
 
-    public OpCalc(){}
 
     public double getX() {
         return x;
