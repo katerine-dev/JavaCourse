@@ -11,8 +11,6 @@ public class Aula0906BrunoInterface {
 
         Interface frm1 = new Interface();
 
-        frm1.setLayout(true);
-
 
 
     }
